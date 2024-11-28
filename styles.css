@@ -122,3 +122,26 @@ ul{
     border-radius: 4px;
     margin-right: 8px;
 }
+
+.checked{
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checked::after{
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg);
+}
+
+.botao-acao{
+    background-color: transparent;
+    border: none;
+}
